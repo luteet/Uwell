@@ -1,0 +1,149 @@
+.footer {
+
+	flex: 0 0 auto;
+	background: #0A1139;
+
+	display: flex;
+	flex-wrap: wrap;
+
+	padding-top: 70px; padding-bottom: 70px;
+
+	@include _992 {
+		padding-top: 75px; padding-bottom: 83px;
+	}
+
+	position: relative;
+	overflow: hidden;
+
+	&__decor {
+		position: absolute;
+		left: 0; top: 0;
+		width: 100%; height: 100%;
+		overflow: hidden;
+		user-select: none; pointer-events: none;
+		display: block;
+
+		& img {
+			position: absolute;
+			right: 0; top: 10%;
+			width: 100%; height: auto;
+			transform: translate(40%,-10%);
+		}
+
+		@include _550 {
+			display: none;
+		}
+	}
+
+	// .footer__logo
+
+	&__logo {
+
+		flex: 1 1 100%;
+		padding-right: 20px;
+		@media (min-width: 1150px) {
+			flex: 0 1 20%;
+		}
+
+		// .footer__logo--img
+
+		&--img {
+		}
+	}
+
+	// .footer__block
+
+	&__block {
+
+		flex: 1 1 auto;
+
+		display: flex;
+		flex-direction: column;
+		@include _550 {
+			flex-wrap: wrap;
+			flex-direction: row;
+		}
+
+		margin: -10px;
+		padding-right: 20px; padding-top: 30px;
+		@include _992 {
+			padding-right: 80px;
+		}
+		@media (min-width: 1150px) {
+			padding-top: 0;
+		}
+
+		// .footer__block--item
+
+		&--item {
+			flex: 0 1 33.333%;
+			padding: 10px;
+
+			color: var(--white);
+
+			& h3 {
+				font-size: 0.875rem;
+				line-height: 125%;
+				padding-bottom: 5px;
+			}
+
+			& a {
+				padding: 3.5px 0;
+				display: block;
+				color: var(--white);
+				line-height: 120%;
+
+				transition: color .1s ease;
+				&:hover {
+					color: var(--accent-hover);
+				}
+				
+				&:active {
+					color: var(--accent-active);
+				}
+			}
+		}
+	}
+
+	// .footer__nav
+
+	&__nav {
+		& a {
+			padding: 5px 0;
+		}
+	}
+
+	// .footer__contacts
+
+	&__contacts {
+		& a {
+			font-size: 0.875rem;
+		}
+	}
+
+	// .footer__address
+
+	&__address {
+		& li {
+			font-size: 0.875rem;
+		}
+	}
+
+	// .footer__map
+
+	&__map {
+		flex: 1 1 100%;
+		padding-top: 30px;
+		@include _768 {
+			padding-top: 0;
+			flex: 0 1 30%;
+		}
+		@include _992 {
+			flex: 0 1 27%;
+		}
+		height: 250px;
+		& iframe {
+			width: 100%; height: 100%;
+		}
+	}
+}

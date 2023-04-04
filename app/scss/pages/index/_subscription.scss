@@ -1,0 +1,67 @@
+.subscription {
+
+	padding-top: 40px; padding-bottom: 40px;
+
+	@include _992 {
+		padding-top: 45px; padding-bottom: 50px;
+	}
+
+	// .subscription__title
+
+	&__title {
+	}
+
+	// .subscription__list
+
+	&__list {
+		padding-top: 30px;
+		@include _992 {
+			padding-top: 60px;
+			gap: 15px;
+		}
+
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+		gap: 10px;
+	}
+
+	// .subscription__card
+
+	&__card {
+
+		padding: 22px;
+		background: var(--primary-color-light);
+		border-radius: 10px;
+
+		// .subscription__card--id
+
+		&--id {
+			
+			display: inline-block;
+			border: 1px solid #1F9CB3;
+			border-radius: 25px;
+
+			font-weight: 600;
+			font-size: 0.875rem;
+			line-height: 120%;
+			color: #1F9CB3;
+
+			padding: 7px 16px;
+		}
+
+		// .subscription__card--text
+
+		&--text {
+			display: block;
+			color: var(--dark);
+			line-height: 131%;
+			font-size: 1.125rem;
+			padding-top: 5px;
+			@include _992 {
+				font-size: 1rem;
+				padding-top: 21px;
+			}
+			
+		}
+	}
+}

@@ -1,0 +1,58 @@
+.book-doctor {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	@include _768 {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	padding-top: 70px; padding-bottom: 70px;
+
+	@include _992 {
+		padding-top: 120px; padding-bottom: 120px;
+	}
+
+	background: var(--primary-color-1);
+
+	// .book-doctor__content
+
+	&__content {
+		flex: 0 1 65%;
+		color: var(--light);
+		padding: 0 15px 0 0;
+	}
+
+	// .book-doctor__title
+
+	&__title {
+	}
+
+	// .book-doctor__text
+
+	&__text {
+
+		font-weight: 300;
+		@include _992 {
+			font-weight: 400;
+			font-size: 1.125rem;
+		}
+		
+		line-height: 150%;
+
+		& p {
+			padding-top: 10px;
+		}
+	}
+
+	// .book-doctor__btn
+
+	&__btn {
+		margin-top: 50px;
+		@include _992 {
+			margin-top: 0;
+		}
+	}
+}

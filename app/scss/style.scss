@@ -1,0 +1,25 @@
+@import 'mixin';
+@import 'libs';
+@import 'null';
+@import 'vars';
+@import 'global';
+@import 'font';
+
+@import 'main-sections/header';
+
+
+@import 'pages/index/hero';
+@import 'pages/index/services';
+@import 'pages/index/advantages';
+@import 'pages/index/statistics';
+@import 'pages/index/how-we-work';
+@import 'pages/index/tariffs';
+@import 'pages/index/subscription';
+@import 'pages/index/app';
+@import 'pages/index/write-about-us';
+@import 'pages/index/our-partners';
+@import 'pages/index/book-doctor';
+@import 'pages/index/faq';
+
+
+@import 'main-sections/footer';

@@ -1,0 +1,58 @@
+
+@use 'sass:math';
+
+$containerMin: 1095;
+$container: 1140;
+$container2: 1160;
+$containerLarge: 1440;
+
+:root {
+	--title-font: 'Proxima Nova', sans-serif;
+	--main-font: 'Proxima Nova', sans-serif;
+	
+	--primary-color-1: #1F9CB3;
+	--primary-color-2: #00939D;
+	--primary-color-light: #E8F8FF;
+	--text-color: #224870;
+	--title-color: #07286E;
+	--light: #E8FBF9;
+	--dark: #2F2F2F;
+	--aqua: #69DBC8;
+
+	--accent: #FF822E;
+	--accent-hover: #ff954e;
+	--accent-active: #f06d16;
+
+	--white: #FFF;
+	--black: #000;
+
+	--container-padding: 20px;
+}
+
+@font-face {
+	@include font-include('Proxima Nova', 300, swap, normal, 'ProximaNova-Light');
+}
+
+@font-face {
+	@include font-include('Proxima Nova', 400, swap, normal, 'ProximaNova-Regular');
+}
+
+@font-face {
+	@include font-include('Proxima Nova', 600, swap, normal, 'ProximaNova-SemiBold');
+}
+
+@font-face {
+	@include font-include('Proxima Nova', 700, swap, normal, 'ProximaNova-Bold');
+}
+
+@font-face {
+	@include font-include('OpenSans', 400, swap, normal, 'OpenSans-Regular');
+}
+
+@font-face {
+	@include font-include('OpenSans', 600, swap, normal, 'OpenSans-SemiBold');
+}
+
+@font-face {
+	@include font-include('Inter', 500, swap, normal, 'Inter-Medium');
+}

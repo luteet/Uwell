@@ -1,0 +1,102 @@
+
+.main-title {
+	font-family: var(--title-font);
+	font-weight: 700;
+	font-size: 62px;
+	line-height: 120%;
+	text-align: center;
+	color: var(--title-color);
+
+	font-size: 1.75rem;
+
+	@include _550 {
+		font-size: 2rem;
+	}
+
+	@include _768 {
+		font-size: 2.5rem;
+	}
+
+	@include _992 {
+		font-size: 3.875rem;
+	}
+}
+
+.title {
+	
+	font-family: var(--title-font);
+	font-weight: 700;
+
+	font-size: 1.5rem;
+	line-height: 160%;
+	text-transform: uppercase;
+
+	@include _992 {
+		font-size: 1.75rem;
+	}
+
+}
+
+.section-title {
+
+	font-family: var(--title-font);
+	font-weight: 700;
+	font-size: 1.5rem;
+	&._min {
+		font-size: 1.375rem;
+		text-transform: none;
+	}
+	line-height: 120%;
+	
+	color: var(--title-color);
+	text-align: center;
+	text-transform: uppercase;
+
+	@include _550 {
+		font-size: 1.75rem;
+		&._min {
+			font-size: 1.5rem;
+		}
+	}
+	
+	@include _768 {
+		font-size: 2rem;
+		&._min {
+			font-size: 2rem;
+		}
+	}
+	
+	@include _992 {
+		font-size: 2.25rem;
+		&._min {
+			font-size: 2.25rem;
+		}
+		letter-spacing: 1px;
+	}
+
+}
+
+.main-text {
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 130%;
+	text-align: center;
+	color: var(--text-color);
+
+	@include _550 {
+		font-size: 1.25rem;
+	}
+	
+	@include _768 {
+		font-size: 1.5rem;
+	}
+	
+	@include _992 {
+		font-size: 1.75rem;
+	}
+
+}
+
+.txt-center {
+	text-align: center;
+}

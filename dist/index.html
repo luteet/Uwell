@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header class="header container">
+			<a href="index.html" class="header__logo">
+				<picture>
+					<source srcset="img/logo.webp" type="image/webp">
+					<img src="img/logo.png" alt="Logo" width="91" height="39" loading="lazy" class="header__logo--img">
+				</picture>
+			</a>
+			<nav class="header__nav">
+				<div class="header__nav--body">
+					<ul class="header__nav--list btn-to-scroll">
+						<li>
+							<a href="#about-us">
+								Про нас
+							</a>
+						</li>
+						<li>
+							<a href="#advantages">
+								Переваги
+							</a>
+						</li>
+						<li>
+							<a href="#how-we-work">
+								Як ми піклуємося
+							</a>
+						</li>
+						<li>
+							<a href="#prices">
+								Ціни
+							</a>
+						</li>
+						<li>
+							<a href="#app">
+								Додаток
+							</a>
+						</li>
+						<li>
+							<a href="#our-partners">
+								Партнери
+							</a>
+						</li>
+						<li>
+							<a href="#faq">
+								F.A.Q
+							</a>
+						</li>
+					</ul>
+					<ul class="header__nav--add">
+						<li>
+							<a href="tel:0800334247" class="header__tel">
+								0 800 33 42 47
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<button class="header__burger" type="button" aria-label="Menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</header>
+
+		<main class="main">
+			<section class="hero container">
+				<div class="hero__bg" aria-hidden="true">
+					<div class="hero__bg--element">
+						<picture>
+							<source srcset="img/index/hero/decor-1.webp" type="image/webp">
+							<img src="img/index/hero/decor-1.png" alt="" width="0" height="0" loading="lazy">
+						</picture>
+					</div>
+					<div class="hero__bg--element">
+						<picture>
+							<source srcset="img/index/hero/decor-2.webp" type="image/webp">
+							<img src="img/index/hero/decor-2.png" alt="" width="0" height="0" loading="lazy">
+						</picture>
+					</div>
+				</div>
+				<div class="hero__content">
+					<h1 class="hero__title main-title">
+						Знайомтеся зі своїм найуважнішим лікарем online
+					</h1>
+					<div class="hero__text main-text">
+						<p>
+							Безлімітні online-консультації лікаря з будь-якої точки України або світу, електронні рецепти, довідки та заключення.
+						</p>
+					</div>
+					<a href="#" class="hero__btn btn">
+						БРОНЮЮ ЛІКАРЯ
+					</a>
+				</div>
+			</section>
+			<section class="services" id="about-us">
+				<div class="services__container container">
+					<div class="services__content txt-center">
+						<h2 class="services__title section-title">
+							ВАШЕ ЗДОРОВʼЯ В ЦЕНТРІ УВАГИ 24/7/365
+						</h2>
+						<div class="services__text main-text">
+							Uwell — це той самий лікар, що піклується про тих, кого ви любите, та про вас навіть більше за вас
+						</div>
+					</div>
+					<div class="services__inner">
+						<div class="services__item">
+							<div class="services__item--icon">
+								<picture>
+									<source srcset="img/index/services/icon-1.webp" type="image/webp">
+									<img src="img/index/services/icon-1.png" alt="" width="45" height="45" loading="lazy">
+								</picture>
+							</div>
+							<div class="services__item--text">
+								Особистий медичний супровід 24/7
+							</div>
+						</div>
+						<div class="services__item">
+							<div class="services__item--icon">
+								<picture>
+									<source srcset="img/index/services/icon-2.webp" type="image/webp">
+									<img src="img/index/services/icon-2.png" alt="" width="45" height="45" loading="lazy">
+								</picture>
+							</div>
+							<div class="services__item--text">
+								Покрокова стратегія лікування
+							</div>
+						</div>
+						<div class="services__item">
+							<div class="services__item--icon">
+								<picture>
+									<source srcset="img/index/services/icon-3.webp" type="image/webp">
+									<img src="img/index/services/icon-3.png" alt="" width="45" height="45" loading="lazy">
+								</picture>
+							</div>
+							<div class="services__item--text">
+								Додаткова перевірка діагнозів
+							</div>
+						</div>
+						<div class="services__item">
+							<div class="services__item--icon">
+								<picture>
+									<source srcset="img/index/services/icon-4.webp" type="image/webp">
+									<img src="img/index/services/icon-4.png" alt="" width="45" height="45" loading="lazy">
+								</picture>
+							</div>
+							<div class="services__item--text">
+								Відсутність аналізів і ліків “про всяк випадок”
+							</div>
+						</div>
+						<div class="services__item">
+							<div class="services__item--icon">
+								<picture>
+									<source srcset="img/index/services/icon-5.webp" type="image/webp">
+									<img src="img/index/services/icon-5.png" alt="" width="45" height="45" loading="lazy">
+								</picture>
+							</div>
+							<div class="services__item--text">
+								Доказова медицина
+							</div>
+						</div>
+						<div class="services__image">
+							<svg class="svg">
+								<clipPath id="services-decor-circle" clipPathUnits="objectBoundingBox">
+									<path d="M1,0.5 C1,0.776,0.776,1,0.5,1 C0.224,1,0,0.776,0,0.5 C0,0.224,0.224,0,0.5,0 C0.776,0,1,0.224,1,0.5 M0.209,0.5 C0.209,0.661,0.339,0.791,0.5,0.791 C0.661,0.791,0.791,0.661,0.791,0.5 C0.791,0.339,0.661,0.209,0.5,0.209 C0.339,0.209,0.209,0.339,0.209,0.5"></path>
+								</clipPath>
+							</svg>
+							<div class="services__image--body">
+								<picture>
+									<source srcset="img/index/services/phone.webp" type="image/webp">
+									<img src="img/index/services/phone.png" alt="" width="340" height="490" loading="lazy">
+								</picture>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="services__block container">
+					<div class="services__block--bg" aria-hidden="true">
+						<div class="services__block--bg-element">
+							<picture>
+								<source srcset="img/index/services/decor-1.webp" type="image/webp">
+								<img src="img/index/services/decor-1.png" alt="" width="0" height="0" loading="lazy">
+							</picture>
+						</div>
+						<div class="services__block--bg-element">
+							<picture>
+								<source srcset="img/index/services/decor-2.webp" type="image/webp">
+								<img src="img/index/services/decor-2.png" alt="" width="0" height="0" loading="lazy">
+							</picture>
+						</div>
+					</div>
+					<h3 class="services__block--title title">Знайомтесь зі своїм новим медичним сервісом вже зараз </h3>
+					<div class="services__block--text">
+						<p>Якщо щось турбує — хоч нежить, хоч гострий напад — наша команда фахівців опікуватиметься вами до повного одужання.</p>
+						<p>Не марнуйте гроші та час через чужі помилки, поганий настрій чи недовершеність системи. </p>
+					</div>
+				</div>
+			</section>
+			<section class="advantages container" id="advantages">
+				<h2 class="advantages__title section-title">
+					ПЕРЕВАГИ UWELL-ПІКЛУВАННЯ
+				</h2>
+				<div class="advantages__wrapper">
+					<div class="advantages__block">
+						<h3 class="advantages__block--title title">ЯКІСТЬ</h3>
+						<ul class="advantages__block--list">
+							<li>
+								лікарі з багаторічним досвідом
+							</li>
+							<li>
+								міжнародні протоколи лікування
+							</li>
+							<li>
+								терапія проблем, що давно не дають спокою
+							</li>
+						</ul>
+						<div class="advantages__block--image">
+							<picture>
+								<source srcset="img/index/advantages/card-image.webp" type="image/webp">
+								<img src="img/index/advantages/card-image.jpg" alt="" width="0" height="0" loading="lazy">
+							</picture>
+						</div>
+					</div>
+					<div class="advantages__block">
+						<h3 class="advantages__block--title title">Час</h3>
+						<ul class="advantages__block--list">
+							<li>
+								відповідь лікаря за 1 хвилину — чат, відео, телефонний дзвінок
+							</li>
+							<li>
+								рецепти на ліки, пошук та замовлення необхідних препаратів 
+							</li>
+							<li>
+								запис до клінік, лабораторій і фахівців вузького профілю на офлайн-візити
+							</li>
+						</ul>
+					</div>
+					<div class="advantages__block">
+						<h3 class="advantages__block--title title">УВАЖНІСТЬ</h3>
+						<ul class="advantages__block--list">
+							<li>
+								безлімітні онлайн-консультації — звертайтесь з будь-якого питання
+							</li>
+							<li>
+								додатково перевіряємо діагнози та пояснюємо, чому робимо саме так і навіщо саме ці ліки
+							</li>
+							<li>
+								рекомендації простою мовою
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="statistics container">
+				<div class="statistics__content">
+					<h2 class="statistics__title section-title">
+						Uwell полегшує життя:
+					</h2>
+					<ul class="statistics__list">
+						<li>
+							<b>2 000 +</b>
+							<span>клієнтів Uwell</span>
+						</li>
+						<li>
+							<b>32 000 +</b>
+							<span>організованих послуг за рік</span>
+						</li>
+						<li>
+							<b>3 роки</b>
+							<span>роботи проекту</span>
+						</li>
+					</ul>
+				</div>
+				<div class="statistics__image">
+					<div class="statistics__image--bg">
+						<div class="statistics__image--decor">
+							<picture>
+								<source srcset="img/index/statistics/decor-2.webp" type="image/webp">
+								<img src="img/index/statistics/decor-2.png" alt="" width="0" height="0" loading="lazy">
+							</picture>
+						</div>
+					</div>
+					<div class="statistics__image--body">
+						<picture>
+							<source srcset="img/index/statistics/image.webp" type="image/webp">
+							<img src="img/index/statistics/image.png" alt="" width="408" height="364" loading="lazy">
+						</picture>
+					</div>
+					<div class="statistics__image--bg">
+						<div class="statistics__image--decor">
+							<picture>
+								<source srcset="img/index/statistics/decor-1.webp" type="image/webp">
+								<img src="img/index/statistics/decor-1.png" alt="" width="0" height="0" loading="lazy">
+							</picture>
+						</div>
+						<div class="statistics__image--decor">
+							<picture>
+								<source srcset="img/index/how-we-work/check.webp" type="image/webp">
+								<img src="img/index/how-we-work/check.png" alt="" width="0" height="0" loading="lazy">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="how-we-work container" id="how-we-work">
+				<h2 class="how-we-work__title section-title">
+					ЯК МИ ПІКЛУЄМОСЯ?
+				</h2>
+				<div class="how-we-work__wrapper">
+					<div class="how-we-work__image">
+						<div class="how-we-work__image--decor" aria-hidden="true">
+							<picture>
+								<source srcset="img/index/how-we-work/decor.webp" type="image/webp">
+								<img src="img/index/how-we-work/decor.png" alt="" width="0" height="0" loading="lazy">
+							</picture>
+						</div>
+						<div class="how-we-work__image--body">
+							<picture>
+								<source srcset="img/index/how-we-work/image.webp" type="image/webp">
+								<img src="img/index/how-we-work/image.jpg" alt="doctor doing their work pediatrics office" width="517" height="390" loading="lazy">
+							</picture>
+						</div>
+					</div>
+					<ul class="how-we-work__list">
+						<li class="how-we-work__item">
+							<div class="how-we-work__item--icon">
+								<picture>
+									<source srcset="img/index/how-we-work/check.webp" type="image/webp">
+									<img src="img/index/how-we-work/check.png" alt="" width="90" height="93" loading="lazy">
+								</picture>
+							</div>
+							<div class="how-we-work__item--content">
+								<h3>Вас щось турбує</h3>
+								<span>звертаєтесь до нас — чат, телефон, дзвінок</span>
+							</div>
+						</li>
+						<li class="how-we-work__item">
+							<div class="how-we-work__item--icon">
+								<picture>
+									<source srcset="img/index/how-we-work/check.webp" type="image/webp">
+									<img src="img/index/how-we-work/check.png" alt="" width="90" height="93" loading="lazy">
+								</picture>
+							</div>
+							<div class="how-we-work__item--content">
+								<h3>Персональний лікар </h3>
+								<span>дає консультацію та складає стратегію лікування</span>
+							</div>
+						</li>
+						<li class="how-we-work__item">
+							<div class="how-we-work__item--icon">
+								<picture>
+									<source srcset="img/index/how-we-work/check.webp" type="image/webp">
+									<img src="img/index/how-we-work/check.png" alt="" width="90" height="93" loading="lazy">
+								</picture>
+							</div>
+							<div class="how-we-work__item--content">
+								<h3>Медичний асистент </h3>
+								<span>шукає вузьких спеціалістів та записує вас на прийом або домовляється про візит до лабораторії — за потреби</span>
+							</div>
+						</li>
+						<li class="how-we-work__item">
+							<div class="how-we-work__item--icon">
+								<picture>
+									<source srcset="img/index/how-we-work/check.webp" type="image/webp">
+									<img src="img/index/how-we-work/check.png" alt="" width="90" height="93" loading="lazy">
+								</picture>
+							</div>
+							<div class="how-we-work__item--content">
+								<h3>Пошук ліків</h3>
+								<span>замість вас витрачаємо час на пошук препаратів, а вам даємо зручну схему прийому в мобільному додатку</span>
+							</div>
+						</li>
+						<li class="how-we-work__item">
+							<div class="how-we-work__item--icon">
+								<picture>
+									<source srcset="img/index/how-we-work/check.webp" type="image/webp">
+									<img src="img/index/how-we-work/check.png" alt="" width="90" height="93" loading="lazy">
+								</picture>
+							</div>
+							<div class="how-we-work__item--content">
+								<h3>Особистий супровід</h3>
+								<span>слідкуємо за вашим самопочуттям та за необхідності підтримуємо гарний настрій</span>
+							</div>
+						</li>
+						<li class="how-we-work__item">
+							<div class="how-we-work__item--icon">
+								<picture>
+									<source srcset="img/index/how-we-work/check.webp" type="image/webp">
+									<img src="img/index/how-we-work/check.png" alt="" width="90" height="93" loading="lazy">
+								</picture>
+							</div>
+							<div class="how-we-work__item--content">
+								<h3>Ви здорові!👏</h3>
+
+							</div>
+						</li>
+					</ul>
+					<div class="how-we-work__block">
+						<div class="how-we-work__block--icon">
+							<img src="img/index/how-we-work/icon.svg" width="45" height="45" loading="lazy" alt="">
+						</div>
+						<h3 class="how-we-work__block--title">Відкриття та закриття лікарняних</h3>
+						<span class="how-we-work__block--text">закриваємо усі необхідні довідки та заключення</span>
+					</div>
+				</div>
+			</section>
+			<section class="tariffs container" id="prices">
+				<h2 class="tariffs__title section-title">
+					МИ ПРАЦЮЄМО ЗА ПІДПИСКОЮ
+				</h2>
+				<ul class="tariffs__list">
+					<li class="tariffs__card">
+						<h3 class="tariffs__card--name">
+							Pічна Підписка
+						</h3>
+						<b class="tariffs__card--price main-text">10$ /міс.</b>
+						<span class="tariffs__card--text">Ціна при оплаті за рік</span>
+					</li>
+					<li class="tariffs__card">
+						<h3 class="tariffs__card--name">
+							на 6 МІСЯЦІВ
+						</h3>
+						<b class="tariffs__card--price main-text">13$ /міс.</b>
+						<span class="tariffs__card--text">Ціна при оплаті за 6 місяців</span>
+					</li>
+					<li class="tariffs__card">
+						<h3 class="tariffs__card--name">
+							ПОМІСЯЧНО
+						</h3>
+						<b class="tariffs__card--price main-text">15$ /міс.</b>
+						<span class="tariffs__card--text">Ціна при оплаті за місяць</span>
+					</li>
+				</ul>
+			</section>
+			<section class="subscription container">
+				<h2 class="subscription__title section-title">
+					ДО ПІДПИСКИ ВХОДЯТЬ:
+				</h2>
+				<ul class="subscription__list">
+					<li class="subscription__card">
+						<div class="subscription__card--id">#Медичний асистент</div>
+						<span class="subscription__card--text">це фахівець з медичною освітою, на зв’язку 24/7</span>
+					</li>
+					<li class="subscription__card">
+						<div class="subscription__card--id">#Персональний лікар</div>
+						<span class="subscription__card--text">та необмежена кількість його онлайн-консультацій</span>
+					</li>
+					<li class="subscription__card">
+						<div class="subscription__card--id">#Електронні рецепти</div>
+						<span class="subscription__card--text">без черг, очікувань та бюрократії.</span>
+					</li>
+					<li class="subscription__card">
+						<div class="subscription__card--id">#Відкриття та закриття лікарняних</div>
+						<span class="subscription__card--text">та всі інші необхідні довідки та заключення</span>
+					</li>
+					<li class="subscription__card">
+						<div class="subscription__card--id">#Пошук та замовлення ліків</div>
+						<span class="subscription__card--text">а також пошук препаратів і зручна схема прийому в мобільному додатку</span>
+					</li>
+					<li class="subscription__card">
+						<div class="subscription__card--id">#Альтернативна думка лікаря</div>
+						<span class="subscription__card--text">а з нею — пояснення призначень, обстежень та тактики лікування</span>
+					</li>
+					<li class="subscription__card">
+						<div class="subscription__card--id">#Записи</div>
+						<span class="subscription__card--text">плюс пошук фахівця та запис на офлайн-візит до найближчої клініки чи лабораторії</span>
+					</li>
+					<li class="subscription__card">
+						<div class="subscription__card--id">#Програма лояльності</div>
+						<span class="subscription__card--text">обслуговування у партнерів Uwell зі знижкою до 50%</span>
+					</li>
+				</ul>
+			</section>
+			<section class="app container" id="app">
+				<div class="app__image">
+					<div class="app__image--body">
+						<picture>
+							<source srcset="img/index/app/image.webp" type="image/webp">
+							<img src="img/index/app/image.png" alt="" width="525" height="551" loading="lazy">
+						</picture>
+					</div>
+				</div>
+				<div class="app__content">
+					<h2 class="app__title section-title _min">
+						Завантажте медичний додаток і реєструйтесь самостійно
+					</h2>
+					<div class="app__text">
+						<p>
+							Потребуєте допомоги вже зараз? Ваш лікар Uwell доступний до консультації в додатку. Завантажте додаток, оформлюйте підписку та звертайтесь до найуважніших лікарів без черг.
+						</p>
+					</div>
+					<div class="app__footer">
+						<a href="#" class="app__download" title="Download on the App Store">
+							<img src="img/index/app/AppStore.svg" width="180" height="52" loading="lazy" alt="">
+						</a>
+						<a href="#" class="app__download" title="Download on the Google Play">
+							<img src="img/index/app/GooglePlay.svg" width="180" height="52" loading="lazy" alt="">
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="write-about-us container">
+				<h2 class="write-about-us__title section-title _min">
+					Про нас пишуть
+				</h2>
+				<div class="write-about-us__video">
+					<div class="write-about-us__video--body">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/PLODCE6ksSM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+				</div>
+			</section>
+			<section class="our-partners container" id="our-partners">
+				<h2 class="our-partners__title section-title _min">
+					Наші партнери
+				</h2>
+				<ul class="our-partners__list">
+					<li class="our-partners__logo">
+						<div class="our-partners__logo--body">
+							<picture>
+								<source srcset="img/index/partners/logo-1.webp" type="image/webp">
+								<img src="img/index/partners/logo-1.png" alt="" width="103" height="103" loading="lazy">
+							</picture>
+						</div>
+					</li>
+					<li class="our-partners__logo">
+						<div class="our-partners__logo--body">
+							<picture>
+								<source srcset="img/index/partners/logo-2.webp" type="image/webp">
+								<img src="img/index/partners/logo-2.png" alt="" width="103" height="103" loading="lazy">
+							</picture>
+						</div>
+					</li>
+					<li class="our-partners__logo">
+						<div class="our-partners__logo--body">
+							<picture>
+								<source srcset="img/index/partners/logo-3.webp" type="image/webp">
+								<img src="img/index/partners/logo-3.png" alt="" width="103" height="103" loading="lazy">
+							</picture>
+						</div>
+					</li>
+					<li class="our-partners__logo">
+						<div class="our-partners__logo--body">
+							<picture>
+								<source srcset="img/index/partners/logo-4.webp" type="image/webp">
+								<img src="img/index/partners/logo-4.png" alt="" width="103" height="103" loading="lazy">
+							</picture>
+						</div>
+					</li>
+					<li class="our-partners__logo">
+						<div class="our-partners__logo--body">
+							<picture>
+								<source srcset="img/index/partners/logo-5.webp" type="image/webp">
+								<img src="img/index/partners/logo-5.png" alt="" width="103" height="103" loading="lazy">
+							</picture>
+						</div>
+					</li>
+					<li class="our-partners__logo">
+						<div class="our-partners__logo--body">
+							<picture>
+								<source srcset="img/index/partners/logo-6.webp" type="image/webp">
+								<img src="img/index/partners/logo-6.png" alt="" width="103" height="103" loading="lazy">
+							</picture>
+						</div>
+					</li>
+					<li class="our-partners__logo">
+						<div class="our-partners__logo--body">
+							<picture>
+								<source srcset="img/index/partners/logo-7.webp" type="image/webp">
+								<img src="img/index/partners/logo-7.png" alt="" width="103" height="103" loading="lazy">
+							</picture>
+						</div>
+					</li>
+					<li class="our-partners__logo">
+						<div class="our-partners__logo--body">
+							<picture>
+								<source srcset="img/index/partners/logo-8.webp" type="image/webp">
+								<img src="img/index/partners/logo-8.png" alt="" width="103" height="103" loading="lazy">
+							</picture>
+						</div>
+					</li>
+					<li class="our-partners__logo">
+						<div class="our-partners__logo--body">
+							<picture>
+								<source srcset="img/index/partners/logo-9.webp" type="image/webp">
+								<img src="img/index/partners/logo-9.png" alt="" width="103" height="103" loading="lazy">
+							</picture>
+						</div>
+					</li>
+					<li class="our-partners__logo">
+						<div class="our-partners__logo--body">
+							<picture>
+								<source srcset="img/index/partners/logo-10.webp" type="image/webp">
+								<img src="img/index/partners/logo-10.png" alt="" width="103" height="103" loading="lazy">
+							</picture>
+						</div>
+					</li>
+					<li class="our-partners__logo">
+						<div class="our-partners__logo--body">
+							<picture>
+								<source srcset="img/index/partners/logo-11.webp" type="image/webp">
+								<img src="img/index/partners/logo-11.png" alt="" width="103" height="103" loading="lazy">
+							</picture>
+						</div>
+					</li>
+					<li class="our-partners__logo">
+						<div class="our-partners__logo--body">
+							<picture>
+								<source srcset="img/index/partners/logo-12.webp" type="image/webp">
+								<img src="img/index/partners/logo-12.png" alt="" width="103" height="103" loading="lazy">
+							</picture>
+						</div>
+					</li>
+					<li class="our-partners__logo">
+						<div class="our-partners__logo--body">
+							<picture>
+								<source srcset="img/index/partners/logo-13.webp" type="image/webp">
+								<img src="img/index/partners/logo-13.png" alt="" width="103" height="103" loading="lazy">
+							</picture>
+						</div>
+					</li>
+					<li class="our-partners__logo">
+						<div class="our-partners__logo--body">
+							<picture>
+								<source srcset="img/index/partners/logo-14.webp" type="image/webp">
+								<img src="img/index/partners/logo-14.png" alt="" width="103" height="103" loading="lazy">
+							</picture>
+						</div>
+					</li>
+					<li class="our-partners__logo">
+						<div class="our-partners__logo--body">
+							<picture>
+								<source srcset="img/index/partners/logo-15.webp" type="image/webp">
+								<img src="img/index/partners/logo-15.png" alt="" width="103" height="103" loading="lazy">
+							</picture>
+						</div>
+					</li>
+					<li class="our-partners__logo">
+						<div class="our-partners__logo--body">
+							<picture>
+								<source srcset="img/index/partners/logo-16.webp" type="image/webp">
+								<img src="img/index/partners/logo-16.png" alt="" width="103" height="103" loading="lazy">
+							</picture>
+						</div>
+					</li>
+					<li class="our-partners__logo">
+						<div class="our-partners__logo--etc">
+							та інші
+						</div>
+					</li>
+				</ul>
+			</section>
+			<section class="book-doctor container">
+				<div class="book-doctor__content">
+					<h2 class="book-doctor__title title">
+						ЗНАЙОМТЕСЬ ЗІ СВОЇМ НАЙУВАЖНІШИМ ЛІКАРЕМ
+					</h2>
+					<div class="book-doctor__text">
+						<p>
+							Натисніть “БРОНЮЮ ЛІКАРЯ” та обирайте зручний час для знайомства з лікарем або завантажте медичний додаток і реєструйтесь самостійно.
+						</p>
+					</div>
+				</div>
+				<a href="#" class="book-doctor__btn btn">
+					БРОНЮЮ ЛІКАРЯ
+				</a>
+			</section>
+			<section class="faq container" id="faq">
+				<h2 class="faq__title section-title">
+					F.A.Q
+				</h2>
+				<ul class="faq__list">
+					<li class="faq__item">
+						<h3 class="faq__item--title">
+							Який графік роботи вашого сервісу?
+						</h3>
+						<div class="faq__item--content">
+							<p>Ми працюємо 24/7. За кожним нашим клієнтом ми закріплюємо кілька персональних асистентів, які працюють позмінно, щоб забезпечити цілодобову турботу. Лікарі та health-менеджери працюють за звичним “офісним” графіком: з 9 до 18. Проте, якщо ви звертаєтеся після 18 години і ваш персональний асистент, вислухавши й оцінивши ваше запитання, розуміє, що вам потрібна негайна консультація лікаря, ви обов’язково її отримаєте.</p>
+						</div>
+					</li>
+					<li class="faq__item">
+						<h3 class="faq__item--title">
+							Який графік роботи вашого сервісу?
+						</h3>
+						<div class="faq__item--content">
+							<p>Ми працюємо 24/7. За кожним нашим клієнтом ми закріплюємо кілька персональних асистентів, які працюють позмінно, щоб забезпечити цілодобову турботу. Лікарі та health-менеджери працюють за звичним “офісним” графіком: з 9 до 18. Проте, якщо ви звертаєтеся після 18 години і ваш персональний асистент, вислухавши й оцінивши ваше запитання, розуміє, що вам потрібна негайна консультація лікаря, ви обов’язково її отримаєте.</p>
+						</div>
+					</li>
+					<li class="faq__item">
+						<h3 class="faq__item--title">
+							Який графік роботи вашого сервісу?
+						</h3>
+						<div class="faq__item--content">
+							<p>Ми працюємо 24/7. За кожним нашим клієнтом ми закріплюємо кілька персональних асистентів, які працюють позмінно, щоб забезпечити цілодобову турботу. Лікарі та health-менеджери працюють за звичним “офісним” графіком: з 9 до 18. Проте, якщо ви звертаєтеся після 18 години і ваш персональний асистент, вислухавши й оцінивши ваше запитання, розуміє, що вам потрібна негайна консультація лікаря, ви обов’язково її отримаєте.</p>
+						</div>
+					</li>
+					<li class="faq__item">
+						<h3 class="faq__item--title">
+							Який графік роботи вашого сервісу?
+						</h3>
+						<div class="faq__item--content">
+							<p>Ми працюємо 24/7. За кожним нашим клієнтом ми закріплюємо кілька персональних асистентів, які працюють позмінно, щоб забезпечити цілодобову турботу. Лікарі та health-менеджери працюють за звичним “офісним” графіком: з 9 до 18. Проте, якщо ви звертаєтеся після 18 години і ваш персональний асистент, вислухавши й оцінивши ваше запитання, розуміє, що вам потрібна негайна консультація лікаря, ви обов’язково її отримаєте.</p>
+						</div>
+					</li>
+					<li class="faq__item">
+						<h3 class="faq__item--title">
+							Який графік роботи вашого сервісу?
+						</h3>
+						<div class="faq__item--content">
+							<p>Ми працюємо 24/7. За кожним нашим клієнтом ми закріплюємо кілька персональних асистентів, які працюють позмінно, щоб забезпечити цілодобову турботу. Лікарі та health-менеджери працюють за звичним “офісним” графіком: з 9 до 18. Проте, якщо ви звертаєтеся після 18 години і ваш персональний асистент, вислухавши й оцінивши ваше запитання, розуміє, що вам потрібна негайна консультація лікаря, ви обов’язково її отримаєте.</p>
+						</div>
+					</li>
+					<li class="faq__item">
+						<h3 class="faq__item--title">
+							Який графік роботи вашого сервісу?
+						</h3>
+						<div class="faq__item--content">
+							<p>Ми працюємо 24/7. За кожним нашим клієнтом ми закріплюємо кілька персональних асистентів, які працюють позмінно, щоб забезпечити цілодобову турботу. Лікарі та health-менеджери працюють за звичним “офісним” графіком: з 9 до 18. Проте, якщо ви звертаєтеся після 18 години і ваш персональний асистент, вислухавши й оцінивши ваше запитання, розуміє, що вам потрібна негайна консультація лікаря, ви обов’язково її отримаєте.</p>
+						</div>
+					</li>
+					<li class="faq__item">
+						<h3 class="faq__item--title">
+							Який графік роботи вашого сервісу?
+						</h3>
+						<div class="faq__item--content">
+							<p>Ми працюємо 24/7. За кожним нашим клієнтом ми закріплюємо кілька персональних асистентів, які працюють позмінно, щоб забезпечити цілодобову турботу. Лікарі та health-менеджери працюють за звичним “офісним” графіком: з 9 до 18. Проте, якщо ви звертаєтеся після 18 години і ваш персональний асистент, вислухавши й оцінивши ваше запитання, розуміє, що вам потрібна негайна консультація лікаря, ви обов’язково її отримаєте.</p>
+						</div>
+					</li>
+					<li class="faq__item">
+						<h3 class="faq__item--title">
+							Який графік роботи вашого сервісу?
+						</h3>
+						<div class="faq__item--content">
+							<p>Ми працюємо 24/7. За кожним нашим клієнтом ми закріплюємо кілька персональних асистентів, які працюють позмінно, щоб забезпечити цілодобову турботу. Лікарі та health-менеджери працюють за звичним “офісним” графіком: з 9 до 18. Проте, якщо ви звертаєтеся після 18 години і ваш персональний асистент, вислухавши й оцінивши ваше запитання, розуміє, що вам потрібна негайна консультація лікаря, ви обов’язково її отримаєте.</p>
+						</div>
+					</li>
+				</ul>
+			</section>
+		</main>
+
+		<footer class="footer container _large">
+			<div class="footer__decor">
+				<picture>
+					<source srcset="img/footer-decor.webp" type="image/webp">
+					<img src="img/footer-decor.png" alt="" width="0" height="0" loading="lazy">
+				</picture>
+			</div>
+			<a href="index.html" class="footer__logo">
+				<img src="img/logo-light.svg" width="139" height="53" loading="lazy" alt="Logo" class="footer__logo--img">
+			</a>
+			<div class="footer__block">
+				<nav class="footer__block--item footer__nav btn-to-scroll">
+					<ul>
+						<li>
+							<a href="#about-us">
+								Про нас
+							</a>
+						</li>
+						<li>
+							<a href="#advantages">
+								Переваги
+							</a>
+						</li>
+						<li>
+							<a href="#how-we-work">
+								Як ми піклуємося
+							</a>
+						</li>
+						<li>
+							<a href="#prices">
+								Ціни
+							</a>
+						</li>
+						<li>
+							<a href="#app">
+								Додаток
+							</a>
+						</li>
+						<li>
+							<a href="#our-partners">
+								Партнери
+							</a>
+						</li>
+						<li>
+							<a href="#faq">
+								F.A.Q
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="footer__block--item footer__contacts">
+					<h3>Відділ продажу:</h3>
+					<ul>
+						<li>
+							<a href="tel:0443338671">
+								044 333 86 71
+							</a>
+						</li>
+						<li>
+							<a href="tel:0675004742">
+								067 500 47 42
+							</a>
+						</li>
+						<li>
+							<a href="mailto:Hello@uwell.com.ua">
+								Hello@uwell.com.ua
+							</a>
+						</li>
+					</ul>
+				</div>
+				<address class="footer__block--item footer__address">
+					<h3>Наша адреса:</h3>
+					<ul>
+						<li>
+							<a href="https://goo.gl/maps/e96YvybmeMwCwEMP6">
+								м. Київ, вул. Глибочицька 32в
+							</a>
+						</li>
+					</ul>
+				</address>
+			</div>
+			<div class="footer__map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.871522427939!2d30.490766615883892!3d50.46211709440504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce7007202c4f%3A0xac8694be5a8c07d8!2z0YPQuy4g0JPQu9GD0LHQvtGH0LjRhtC60LDRjywgMzLQsiwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1680614234577!5m2!1sru!2sua" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
