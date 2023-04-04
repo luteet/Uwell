@@ -22,6 +22,10 @@ aside,details,footer,header,main,nav {
     position: relative
 }
 
+.header__burger::before,.header__nav--body::before,.services__image::before {
+    content: ""
+}
+
 hr {
     box-sizing: content-box;
     height: 0
@@ -447,7 +451,9 @@ input:focus::placeholder,textarea:focus::placeholder {
 }
 
 .header__logo--img {
-    width: 100%
+    width: 100%;
+    -o-object-fit: contain;
+    object-fit: contain
 }
 
 .header__nav {
@@ -480,7 +486,6 @@ input:focus::placeholder,textarea:focus::placeholder {
 }
 
 .header__nav--body::before {
-    content: "";
     position: fixed;
     height: var(--height-header);
     z-index: 2
@@ -556,7 +561,6 @@ input:focus::placeholder,textarea:focus::placeholder {
 }
 
 .header__burger::before {
-    content: "";
     position: absolute;
     left: 50%;
     top: 50%;
@@ -755,7 +759,6 @@ input:focus::placeholder,textarea:focus::placeholder {
 }
 
 .services__image::before {
-    content: "";
     position: absolute;
     left: 50%;
     top: 50%;
