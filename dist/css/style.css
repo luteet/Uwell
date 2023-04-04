@@ -22,10 +22,6 @@ aside,details,footer,header,main,nav {
     position: relative
 }
 
-.btn,.header {
-    transition: background .3s ease
-}
-
 hr {
     box-sizing: content-box;
     height: 0
@@ -315,12 +311,13 @@ section {
     line-height: 107%;
     color: #fff;
     background: var(--accent);
-    color: var(--white)
+    color: var(--white);
+    transition: background .3s ease
 }
 
-.main-title,.section-title,.title {
-    font-family: var(--title-font);
-    font-weight: 700
+.section-title,.title {
+    font-weight: 700;
+    font-size: 1.5rem
 }
 
 .btn:hover {
@@ -371,20 +368,25 @@ input:focus::placeholder,textarea:focus::placeholder {
 }
 
 .main-title {
+    font-family: var(--title-font);
+    font-weight: 700;
     line-height: 120%;
     text-align: center;
     color: var(--title-color);
     font-size: 1.75rem
 }
 
-.title {
-    font-size: 1.5rem;
+.services__block--title,.title {
     line-height: 160%;
     text-transform: uppercase
 }
 
+.title {
+    font-family: var(--title-font)
+}
+
 .section-title {
-    font-size: 1.5rem;
+    font-family: var(--title-font);
     line-height: 120%;
     color: var(--title-color);
     text-align: center;
@@ -413,6 +415,7 @@ input:focus::placeholder,textarea:focus::placeholder {
     left: 0;
     top: 0;
     width: 100%;
+    transition: background .3s ease;
     z-index: 99;
     display: flex;
     justify-content: space-between;
@@ -431,7 +434,8 @@ input:focus::placeholder,textarea:focus::placeholder {
 .header__nav,.header__nav--body::before {
     top: 0;
     background: var(--white);
-    width: 100%
+    width: 100%;
+    left: 0
 }
 
 .header__logo {
@@ -448,7 +452,6 @@ input:focus::placeholder,textarea:focus::placeholder {
 
 .header__nav {
     position: absolute;
-    left: 0;
     height: var(--height-screen,100vh);
     overflow-y: auto;
     overflow-x: hidden;
@@ -479,7 +482,6 @@ input:focus::placeholder,textarea:focus::placeholder {
 .header__nav--body::before {
     content: "";
     position: fixed;
-    left: 0;
     height: var(--height-header);
     z-index: 2
 }
@@ -681,13 +683,13 @@ input:focus::placeholder,textarea:focus::placeholder {
     text-align: center
 }
 
+.app,.hero__btn {
+    margin-top: 40px
+}
+
 .hero__text {
     font-weight: 300;
     padding-top: 15px
-}
-
-.hero__btn {
-    margin-top: 40px
 }
 
 .services {
@@ -798,11 +800,9 @@ input:focus::placeholder,textarea:focus::placeholder {
 
 .services__block--title {
     color: var(--white);
-    text-transform: uppercase;
     flex: 0 1 50%;
     padding-right: 20px;
     font-size: 1.5rem;
-    line-height: 160%;
     font-weight: 700
 }
 
@@ -1255,7 +1255,6 @@ input:focus::placeholder,textarea:focus::placeholder {
     background: #c5f2ec;
     padding-top: 45px;
     padding-bottom: 60px;
-    margin-top: 40px;
     margin-bottom: 30px
 }
 
@@ -1582,6 +1581,10 @@ input:focus::placeholder,textarea:focus::placeholder {
     padding-bottom: 5px
 }
 
+.footer__block--item svg path {
+    transition: fill .1s ease
+}
+
 .footer__block--item a {
     padding: 3.5px 0;
     display: block;
@@ -1590,12 +1593,24 @@ input:focus::placeholder,textarea:focus::placeholder {
     transition: color .1s ease
 }
 
+.footer__block--item a path {
+    fill: var(--white)
+}
+
 .footer__block--item a:hover {
     color: var(--accent-hover)
 }
 
+.footer__block--item a:hover path {
+    fill: var(--accent-hover)
+}
+
 .footer__block--item a:active {
     color: var(--accent-active)
+}
+
+.footer__block--item a:active path {
+    fill: var(--accent-active)
 }
 
 .footer__nav a {
@@ -1604,6 +1619,21 @@ input:focus::placeholder,textarea:focus::placeholder {
 
 .footer__address li,.footer__contacts a {
     font-size: .875rem
+}
+
+.footer__social {
+    padding-top: 15px
+}
+
+.footer__social ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -8.5px;
+    padding-top: 8px
+}
+
+.footer__social a {
+    padding: 8.5px
 }
 
 .footer__map {

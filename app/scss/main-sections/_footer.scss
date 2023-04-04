@@ -87,6 +87,10 @@
 				padding-bottom: 5px;
 			}
 
+			& svg path {
+				transition: fill .1s ease;
+			}
+
 			& a {
 				padding: 3.5px 0;
 				display: block;
@@ -94,12 +98,21 @@
 				line-height: 120%;
 
 				transition: color .1s ease;
+				& path {
+					fill: var(--white);
+				}
 				&:hover {
 					color: var(--accent-hover);
+					& path {
+						fill: var(--accent-hover);
+					}
 				}
 				
 				&:active {
 					color: var(--accent-active);
+					& path {
+						fill: var(--accent-active);
+					}
 				}
 			}
 		}
@@ -126,6 +139,20 @@
 	&__address {
 		& li {
 			font-size: 0.875rem;
+		}
+	}
+
+	&__social {
+		padding-top: 15px;
+		& ul {
+			display: flex;
+			flex-wrap: wrap;
+
+			margin: -8.5px; padding-top: 8px;
+		}
+
+		& a {
+			padding: 8.5px;
 		}
 	}
 
