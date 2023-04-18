@@ -14,6 +14,10 @@ aside,details,footer,header,main,nav {
     display: block
 }
 
+.faq__item,.header__burger,button {
+    cursor: pointer
+}
+
 .main,section,sub,sup {
     position: relative
 }
@@ -82,6 +86,10 @@ button,input,optgroup,select,textarea {
 
 button,select {
     text-transform: none
+}
+
+.advantages__block--title,.btn._alt,.section-title,.services__block--title,.statistics__title,.tariffs__card--name,.tariffs__try--btn,.title {
+    text-transform: uppercase
 }
 
 [type=button],[type=reset],[type=submit],button {
@@ -184,10 +192,6 @@ button,input,textarea {
 
 input::-ms-clear {
     display: none
-}
-
-button {
-    cursor: pointer
 }
 
 address {
@@ -342,7 +346,6 @@ section {
 }
 
 .btn._alt {
-    text-transform: uppercase;
     background: var(--primary-color-1);
     transition: background .3s ease
 }
@@ -447,23 +450,22 @@ input:focus::placeholder,textarea:focus::placeholder {
     font-size: 1.75rem
 }
 
-.section-title,.title {
-    font-family: var(--title-font);
-    font-weight: 700;
-    font-size: 1.5rem;
-    text-transform: uppercase
-}
-
 .main-title mark {
     color: #1f9cb3;
     background: rgba(0,0,0,0)
 }
 
 .title {
+    font-family: var(--title-font);
+    font-weight: 700;
+    font-size: 1.5rem;
     line-height: 160%
 }
 
 .section-title {
+    font-family: var(--title-font);
+    font-weight: 700;
+    font-size: 1.5rem;
     line-height: 120%;
     color: var(--title-color);
     text-align: center
@@ -528,9 +530,9 @@ input:focus::placeholder,textarea:focus::placeholder {
 
 .header__nav,.header__nav--body::before {
     left: 0;
-    top: 0;
     background: var(--white);
-    width: 100%
+    width: 100%;
+    top: 0
 }
 
 .header__logo {
@@ -645,7 +647,6 @@ input:focus::placeholder,textarea:focus::placeholder {
     height: 12px;
     background: rgba(0,0,0,0);
     z-index: 10;
-    cursor: pointer;
     display: block
 }
 
@@ -959,7 +960,6 @@ input:focus::placeholder,textarea:focus::placeholder {
 
 .services__block--title {
     color: var(--white);
-    text-transform: uppercase;
     padding-right: 10px;
     padding-left: 10px;
     font-size: 1.5rem;
@@ -1039,7 +1039,6 @@ input:focus::placeholder,textarea:focus::placeholder {
 }
 
 .advantages__block--title {
-    text-transform: uppercase;
     padding: 30px 30px 0
 }
 
@@ -1087,7 +1086,6 @@ input:focus::placeholder,textarea:focus::placeholder {
 }
 
 .statistics__title {
-    text-transform: uppercase;
     color: var(--aqua);
     text-align: left
 }
@@ -1366,6 +1364,10 @@ input:focus::placeholder,textarea:focus::placeholder {
     margin-top: 40px
 }
 
+.tariffs:last-child {
+    margin-bottom: 0
+}
+
 .tariffs__list {
     padding-top: 35px;
     display: grid;
@@ -1383,7 +1385,6 @@ input:focus::placeholder,textarea:focus::placeholder {
     font-weight: 600;
     font-size: 1.375rem;
     line-height: 100%;
-    text-transform: uppercase;
     color: #2f2f2f
 }
 
@@ -1427,7 +1428,6 @@ input:focus::placeholder,textarea:focus::placeholder {
 }
 
 .tariffs__try--btn {
-    text-transform: uppercase;
     margin-top: 15px
 }
 
@@ -1766,7 +1766,6 @@ input:focus::placeholder,textarea:focus::placeholder {
 }
 
 .faq__item {
-    cursor: pointer;
     user-select: none
 }
 
@@ -2527,10 +2526,6 @@ input:focus::placeholder,textarea:focus::placeholder {
         padding-top: 0
     }
 
-    .reviews,.tariffs {
-        margin-bottom: 45px
-    }
-
     .statistics__content {
         padding: 35px 100px 35px 30px;
         align-self: center
@@ -2594,7 +2589,12 @@ input:focus::placeholder,textarea:focus::placeholder {
     .tariffs {
         padding-top: 90px;
         padding-bottom: 120px;
-        margin-top: 55px
+        margin-top: 55px;
+        margin-bottom: 45px
+    }
+
+    .tariffs:last-child {
+        margin-bottom: 0
     }
 
     .tariffs__try--body {
@@ -2619,7 +2619,8 @@ input:focus::placeholder,textarea:focus::placeholder {
     }
 
     .reviews {
-        margin-top: 45px
+        margin-top: 45px;
+        margin-bottom: 45px
     }
 
     .reviews__list {

@@ -2,10 +2,16 @@
 
 	padding-top: 70px; padding-bottom: 70px;
 	margin-top: 34px; margin-bottom: 30px;
+	&:last-child {
+		margin-bottom: 0;
+	}
 
 	@include _768 {
 		padding-top: 90px; padding-bottom: 120px;
 		margin-top: 55px; margin-bottom: 45px;
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 
 	background: var(--primary-color-light);
