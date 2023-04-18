@@ -3,16 +3,11 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	
-	@include _768 {
-		flex-direction: row;
-		justify-content: space-between;
-	}
 
 	padding-top: 70px; padding-bottom: 70px;
 
 	@include _992 {
-		padding-top: 120px; padding-bottom: 120px;
+		padding-top: 90px; padding-bottom: 90px;
 	}
 
 	background: var(--primary-color-1);
@@ -20,14 +15,24 @@
 	// .book-doctor__content
 
 	&__content {
-		flex: 0 1 65%;
+		max-width: 892px;
+		text-align: center;
+
 		color: var(--light);
-		padding: 0 15px 0 0;
 	}
 
 	// .book-doctor__title
 
 	&__title {
+		& span {
+			display: block;
+			&:not(:first-child) {
+				margin-top: 10px;
+				@include _992 {
+					margin-top: 0;
+				}
+			}
+		}
 	}
 
 	// .book-doctor__text
@@ -50,9 +55,6 @@
 	// .book-doctor__btn
 
 	&__btn {
-		margin-top: 50px;
-		@include _992 {
-			margin-top: 0;
-		}
+		margin-top: 30px;
 	}
 }

@@ -4,7 +4,7 @@
 
 	padding-top: var(--height-header); padding-bottom: var(--height-header);
 	@include _992 {
-		padding-bottom: 0;
+		padding-bottom: 50px;
 	}
 
 	display: flex;
@@ -28,7 +28,7 @@
 			height: auto;
 			min-width: 230px;
 
-			&:nth-child(1) {
+			/* &:nth-child(1) {
 				width: 35%;
 				& img {
 					max-width: 1000px; min-width: 230px;
@@ -40,12 +40,12 @@
 					transform: translate(-25%,15%);
 				}
 				@media (min-width: 1200px) {
-					top: 50%;
-					transform: translate(-25%,-60%);
+					top: 0%;
+					transform: translate(-45%,-20%);
 				}
-			}
+			} */
 
-			&:nth-child(2) {
+			&:nth-child(1) {
 				width: 50%;
 				right: 0; bottom: 0;
 				transform: translate(10%,30%);
@@ -67,14 +67,43 @@
 	// .hero__content
 
 	&__content {
-		max-width: 913px;
-		padding: 0 20px;
-		margin: 0 auto;
+		max-width: 830px;
+	}
+
+	&__list {
+		color: var(--text-color);
+		font-weight: 300;
+		font-size: 1rem;
+		line-height: 130%;
+		
+		@include _768 {
+			font-size: 1.25rem;
+		}
+		
 		@include _992 {
-			margin: 130px auto 30px auto;
+			font-size: 1.5rem;
+			padding-top: 15px;
 		}
 
-		text-align: center;
+		padding-top: 10px;
+
+		& li {
+
+			position: relative;
+			padding-left: 20px;
+
+			&::before {
+				content: '•';
+				position: absolute;
+				left: 0; top: 0;
+				
+			}
+
+			margin-top: 10px;
+			@include _992 {
+				margin-top: 15px;
+			}
+		}
 	}
 
 	// .hero__title
@@ -96,9 +125,59 @@
 
 	&__btn {
 		margin-top: 40px;
+		position: relative;
+		z-index: 2;
 		
 		@include _992 {
 			margin-top: 60px;
 		}
+	}
+
+	&__footer {
+		display: flex;
+		align-items: flex-end;
+	}
+
+	&__decor-text {
+		text-align: center;
+		transform: rotate(-15deg);
+		margin-bottom: -15px;
+		@include _550 {
+			margin-bottom: -15px;
+		}
+		
+		@include _768 {
+			margin-bottom: -25px;
+		}
+		
+		@include _992 {
+			margin-bottom: -35px;
+		}
+
+		& span {
+			padding: 10px 10px 20px 10px;
+			@include _550 {
+				padding: 20px 30px 20px 30px;
+			}
+			
+			&:first-child {
+				position: relative;
+				z-index: 2;
+				padding: 5px 10px 25px 10px;
+				@include _550 {
+					padding: 5px 30px 25px 30px;
+				}
+			}
+	
+			&:not(:first-child) {
+				margin-top: -35px;
+				transform: translateY(-10px);
+				@include _550 {
+					margin-top: -35px;
+					transform: translateY(-15px);
+				}
+			}
+		}
+		//transform: rotate(15deg,0deg);
 	}
 }

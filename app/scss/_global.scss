@@ -56,13 +56,18 @@ section {
 	padding-left: var(--container-padding);
 	padding-right: var(--container-padding);
 	
-	@media (min-width: #{$containerMin}px) {
+	@media (min-width: #{$containerMin2}px) {
 		padding-left: max(var(--container-padding), calc(50% - #{math.div($container, 2)}px));
 		padding-right: max(var(--container-padding), calc(50% - #{math.div($container, 2)}px));
 
 		&._min {
 			padding-left: max(var(--container-padding), calc(50% - #{math.div($containerMin, 2)}px));
 			padding-right: max(var(--container-padding), calc(50% - #{math.div($containerMin, 2)}px));
+		}
+
+		&._min-2 {
+			padding-left: max(var(--container-padding), calc(50% - #{math.div($containerMin2, 2)}px));
+			padding-right: max(var(--container-padding), calc(50% - #{math.div($containerMin2, 2)}px));
 		}
 
 		&._large {
@@ -93,12 +98,16 @@ section {
 	display: inline-block;
 	text-align: center;
 	
-	padding: 15px 40px;
+	padding: 15px;
 
 	border-radius: 5px;
 
 	font-weight: 500;
-	font-size: 1.375rem;
+	font-size: 1.175rem;
+	@media (min-width: 375px) {
+		font-size: 1.375rem;
+		padding: 15px 30px;
+	}
 
 	@include _550 {
 		font-size: 1.5rem;
@@ -123,6 +132,21 @@ section {
 	&:active {
 		background: var(--accent-active);
 	}
+
+	&._alt {
+		text-transform: uppercase;
+		background: var(--primary-color-1);
+
+		transition: background .3s ease;
+
+		&:hover {
+			background: var(--primary-color-1-hover);
+		}
+		
+		&:active {
+			background: var(--primary-color-1-active);
+		}
+	}
 }
 
 input, textarea {
@@ -133,5 +157,80 @@ input, textarea {
 
 	&:focus::placeholder {
 		opacity: 0;
+	}
+}
+
+.page-bg {
+
+	position: absolute;
+	left: 0; top: 0;
+	width: 100%; height: 100%;
+	user-select: none; pointer-events: none;
+	z-index: 4;
+
+	&__element {
+		position: absolute;
+		height: auto;
+		min-width: 230px;
+
+		& img {
+			width: 100%; height: auto;
+		}
+		
+		&:nth-child(1) {
+			width: 35%;
+			& img {
+				max-width: 1000px; min-width: 230px;
+			}
+
+			display: none;
+
+			@media (min-width: 1440px) {
+				display: block;
+				width: 35%;
+				transform: translate(-65%,-35%);
+			}
+			@media (min-width: 1600px) {
+				top: 0%;
+				transform: translate(-50%,-20%);
+			}
+		}
+	}
+}
+
+.decor-accent-text {
+	font-family: "Caveat";
+	font-size: 1.225rem;
+	@media (min-width: 375px) {
+		font-size: 1.625rem;
+	}
+	@include _550 {
+		font-size: 1.75rem;
+	}
+	
+	@include _768 {
+		font-size: 2rem;
+	}
+	
+	@include _992 {
+		font-size: 2.75rem;
+	}
+	line-height: 70%;
+	color: #3848D0;
+
+	& span {
+		
+		//margin-top: 5px;
+		display: inline-block;
+		
+		
+		background: url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' viewBox='0 0 229 54' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.7' d='M38.714 53.5746C34.2309 48.3977 4.46705 55.2148 2.00023 53.6449C0.0377407 51.5467 -0.160796 13.6443 1.99993 8.26716C2.76819 6.33425 3.55209 6.0506 5.32326 6.95639C8.07616 8.66564 44.8893 5.7913 44.8893 5.7913C45.3187 6.94773 46.9709 3.11656 47.1492 4.51956C47.8333 7.74546 107.451 4.04925 112.528 3.92506C115.598 3.84343 113.075 6.02851 116.724 5.17271C124.521 3.49435 141.232 5.39722 147.159 3.44508C151.915 1.84823 152.919 1.80941 157.342 3.1966C161.863 4.44306 186.328 2.98332 189.224 0.481005C189.945 -0.22352 190.459 0.055308 190.408 0.862607C190.398 1.03811 207.532 1.81646 207.581 2.44793C207.679 3.25468 208.185 3.63881 208.69 3.11056C209.626 2.26486 228.046 -0.576025 228.223 1.80956C228.775 8.58022 229.467 36.0075 227 43C224.475 50.4489 208.329 43.152 198.508 47.54L153.832 47.4608L144.115 50.164C143.147 47.7112 138.614 53.7989 136.291 49.4211C135.309 47.6702 127.726 47.3475 125.934 49.1439C124.403 50.5533 85.6893 46.5216 81.4387 51.3801C74.534 47.2299 45.4331 52.6372 38.714 53.5746Z' fill='%23FEEF38'/%3E%3C/svg%3E%0A")
+		0 0 / 100% no-repeat;
+		
+	}
+
+	&._round span {
+		background: url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' viewBox='0 0 207 64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.7' d='M37.134 53.8674C32.8544 48.0824 2.70039 57.4104 0.580075 56.0742C-1.15351 54.0712 3.12016 14.9479 5.07963 8.97193C5.76789 6.85774 6.48886 6.43616 8.07246 7.188C9.64891 8.13044 28.6087 4.87368 43.9324 2.60764C44.2764 3.81316 45.8745 -0.341434 46.0114 1.13774C46.2777 2.82936 59.8984 2.01669 73.9612 1.50482C80.4398 1.27552 89.1258 0.670642 104.806 0.992671C107.574 1.05191 105.119 3.26702 108.439 2.64756C115.535 1.32824 130.158 5.04775 135.597 3.73173C139.969 2.66687 140.874 2.69665 144.607 4.75096C147.591 6.37873 169.991 9.19454 172.912 7.13065C173.64 6.51847 174.047 6.8904 173.881 7.78419C173.881 7.78419 188.623 12.3664 188.577 13.0878C188.531 13.9624 188.914 14.4839 189.43 14.0295C190.382 13.1847 206.731 14.7258 206.506 17.2977C205.818 24.6657 197.555 54.2922 194.375 61.1851C190.993 68.4674 183.067 56.7303 174.007 59.3845C132.275 49.6033 135.127 52.0537 127.899 53.467C127.333 50.7304 122.913 56.6196 121.326 51.8022C120.686 49.8207 114.212 48.7085 112.53 50.4719C112.174 50.7985 109.846 50.6178 106.528 50.2022C102.869 49.7319 77.6214 46.0389 74.192 50.5525C68.0417 45.8105 44.3082 52.062 37.1232 53.789L37.134 53.8674Z' fill='%23FEEF38'/%3E%3C/svg%3E%0A")
+		0 0 / 100% no-repeat;
 	}
 }

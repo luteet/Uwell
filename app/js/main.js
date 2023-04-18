@@ -128,6 +128,31 @@ body.addEventListener('click', function (event) {
 	}
 	
 	// =-=-=-=-=-=-=-=-=-=- </FAQ> -=-=-=-=-=-=-=-=-=-=-
+
+
+
+	// =-=-=-=-=-=-=-=-=-=-=-=- <scroll on click to section> -=-=-=-=-=-=-=-=-=-=-=-=
+
+	let scrollLink = $('.scroll-link');
+	if(scrollLink) {
+		event.preventDefault();
+		let section;
+	
+		section = document.querySelector(scrollLink.getAttribute('href'))
+	
+		menu.forEach(elem => {
+			elem.classList.remove('_mob-menu-active')
+		})
+	
+		window.scrollTo({
+			left: 0,
+			top: (section) ? section.offsetTop : 0,
+			behavior: 'smooth'
+		})
+	
+	}
+	
+	// =-=-=-=-=-=-=-=-=-=-=-=- </scroll on click to section> -=-=-=-=-=-=-=-=-=-=-=-=
 	
 
 })

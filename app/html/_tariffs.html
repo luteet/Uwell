@@ -1,0 +1,34 @@
+<section class="tariffs container" id="prices">
+	<h2 class="tariffs__title section-title">
+		МИ ПРАЦЮЄМО ЗА ПІДПИСКОЮ
+	</h2>
+	<ul class="tariffs__list">
+		@@loop("_tariff-card.html", [
+			{
+				"title": 'Pічна Підписка',
+				"price": '10$ /міс.',
+			},
+			{
+				"title": 'на 6 МІСЯЦІВ',
+				"price": '13$ /міс.',
+			},
+			{
+				"title": 'ПОМІСЯЧНО',
+				"price": '15$ /міс.',
+			},
+		])
+	</ul>
+	<div class="tariffs__try">
+		<div class="tariffs__try--body">
+			<h3 class="tariffs__try--text">
+				У КВІТНІ СПРОБУЙТЕ ПЕРШИЙ МІСЯЦЬ ЗА НАЙНИЖЧОЮ ЦІНОЮ 10$
+			</h3>
+			<a href="#" class="tariffs__try--btn btn">
+				Спробувати
+			</a>
+		</div>
+		<div class="tariffs__try--decor-text decor-accent-text _round">
+			<span>треба брати</span>
+		</div>
+	</div>
+</section>

@@ -2,6 +2,7 @@
 @use 'sass:math';
 
 $containerMin: 1095;
+$containerMin2: 1006;
 $container: 1140;
 $container2: 1160;
 $containerLarge: 1440;
@@ -11,6 +12,8 @@ $containerLarge: 1440;
 	--main-font: 'Proxima Nova', sans-serif;
 	
 	--primary-color-1: #1F9CB3;
+	--primary-color-1-hover: #27a6bd;
+	--primary-color-1-active: #118aa0;
 	--primary-color-2: #00939D;
 	--primary-color-light: #E8F8FF;
 	--text-color: #224870;
@@ -56,3 +59,8 @@ $containerLarge: 1440;
 @font-face {
 	@include font-include('Inter', 500, swap, normal, 'Inter-Medium');
 }
+
+@font-face {
+	@include font-include('Caveat', 400, swap, normal, 'Caveat-Regular');
+}
+

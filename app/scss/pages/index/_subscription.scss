@@ -1,6 +1,6 @@
 .subscription {
 
-	padding-top: 40px; padding-bottom: 40px;
+	padding-top: 80px; padding-bottom: 40px;
 
 	@include _992 {
 		padding-top: 45px; padding-bottom: 50px;
@@ -21,7 +21,7 @@
 		}
 
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+		grid-template-columns: repeat(auto-fill, minmax(250px, auto));
 		gap: 10px;
 	}
 
@@ -29,7 +29,10 @@
 
 	&__card {
 
-		padding: 22px;
+		padding: 20px 20px 20px 20px;
+		@include _992 {
+			padding: 20px 20px 0 20px;
+		}
 		background: var(--primary-color-light);
 		border-radius: 10px;
 
@@ -56,10 +59,11 @@
 			color: var(--dark);
 			line-height: 131%;
 			font-size: 1.125rem;
-			padding-top: 5px;
+			padding: 10px;
+
 			@include _992 {
-				font-size: 1rem;
-				padding-top: 21px;
+				font-size: 1.125rem;
+				padding: 10px;
 			}
 			
 		}

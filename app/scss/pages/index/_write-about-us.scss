@@ -1,14 +1,25 @@
 .write-about-us {
 
+	display: grid;
 	padding-top: 40px; padding-bottom: 30px;
 
 	@include _768 {
 		padding-top: 45px; padding-bottom: 45px;
 	}
 
+	@include _992 {
+		grid-template-columns: 35% auto;
+	}
+
 	// .write-about-us__title
 
 	&__title {
+		@include _992 {
+			text-align: left;
+		}
+		&._min {
+			text-transform: uppercase;
+		}
 	}
 
 	// .write-about-us__video
@@ -19,8 +30,15 @@
 		@include _768 {
 			padding-top: 50px;
 		}
-		max-width: 739px; width: 100%;
+
 		margin: 0 auto;
+
+		@include _992 {
+			padding-top: 0px;
+			margin: 0;
+		}
+
+		max-width: 739px; width: 100%;
 
 		// .write-about-us__video--body
 
