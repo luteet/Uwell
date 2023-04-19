@@ -1985,7 +1985,8 @@ input:focus::placeholder,textarea:focus::placeholder {
 .doctor-card._mode-1 .doctor-reviews__card--text {
     padding: 10px;
     background: var(--white);
-    border-radius: 0 10px 10px
+    border-radius: 0 10px 10px;
+    align-self: self-start
 }
 
 .doctor-reviews__title {
